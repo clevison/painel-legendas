@@ -1,0 +1,20 @@
+.modal-dialog {
+	margin-top: 200px;
+}
+
+.modal-header {
+	background-color: #FF9B22;
+}
+
+.modal-body {
+	text-align: center;
+}
+
+.modal-content {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.myInput {
+	padding: 5px;
+	width: 100%;
+}
