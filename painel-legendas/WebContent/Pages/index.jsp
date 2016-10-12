@@ -66,7 +66,7 @@
 	<!-- /.navbar -->
 
 	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+	<div class="navbar navbar-inverse navbar-fixed-top" >
 		<div class="container">
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
@@ -78,7 +78,7 @@
 					<li class="active"><a href="#">Página inicial</a></li>
 					<li><a href="about.html">Equipes cadastradas</a></li>
 					<li><a href="contact.html">Sobre o site</a></li>
-					<li><a class="btn" id="loginButton" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
+					<li><a class="btn" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -93,9 +93,9 @@
 				<p class="tagline">Cadastre-se e tenha acesso às maiores equipes de tradução do país. <br />
 				Junte-se a elas e venha aprender inglês, português e vários outros idiomas, além de fazer novas amizades e, claro, ajudar as pessoas.</p>
 				<p>
-					<a class="btn btn-action btn-lg" role="button" id="loginButton" data-toggle="modal" data-target="#loginModal">ENTRAR</a>
+					<a class="btn btn-action btn-lg" role="button" data-toggle="modal" data-target="#loginModal">ENTRAR</a>
 					&nbsp;&nbsp;&nbsp;
-					<a class="btn btn-action btn-lg" role="button" id="registerButton" data-toggle="modal" data-target="#registerModal">CRIAR CONTA</a>
+					<a class="btn btn-action btn-lg" role="button" data-toggle="modal" data-target="#registerModal">CRIAR CONTA</a>
 				</p>
 			</div>
 		</div>
