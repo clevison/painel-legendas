@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="../resources/css/mycss.css">
 </head>
 
-<body class="home">
+<body class="home" id="container">
 
 	<!-- Modal to login -->
 	<div class="modal fade" id="loginModal" role="dialog">
@@ -102,26 +102,6 @@
 	</header>
 	<!-- /Header -->
 
-	<footer id="footer" class="top-space">
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-								<a href="#">Página inicial</a> | 
-								<a href="about.html">Equipes cadastradas</a>
-							</p>
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-	</footer>	
-		
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="../resources/js/headroom.min.js"></script>

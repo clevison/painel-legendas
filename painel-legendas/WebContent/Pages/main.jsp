@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="../resources/css/mycss.css">
 </head>
 
-<body class="home">
+<body class="home" id="container">
 
 	<!-- Modal to edit profile -->
 	<div class="modal fade" id="editProfileModal" role="dialog">
@@ -86,62 +86,62 @@
 	</div> 
 	<!-- /.navbar -->
 
-	<!-- Header -->
-	<header id="head">
+	<!-- Main -->
+	<main id="main">
 		<div class="container">
 			<div class="portfolio">
-				<div></div>
 				<div class="teamDiv">
 					<p class="teamName"><a href="#">Equipe</a></p>
 					<img src="../resources/images/teste.png"> <br />
-					<a class="btn" data-toggle="modal" data-target="#requestModal">Solicitar entrada</a>
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
 				</div>
+				
 				<div class="teamDiv">
 					<p class="teamName"><a href="#">Equipe</a></p>
 					<img src="../resources/images/teste.png"> <br />
-					<a class="btn" data-toggle="modal" data-target="#requestModal">Solicitar entrada</a>
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
 				</div>
+				
 				<div class="teamDiv">
 					<p class="teamName"><a href="#">Equipe</a></p>
 					<img src="../resources/images/teste.png"> <br />
-					<a class="btn" data-toggle="modal" data-target="#requestModal">Solicitar entrada</a>
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
 				</div>
+				
 				<div class="teamDiv">
 					<p class="teamName"><a href="#">Equipe</a></p>
 					<img src="../resources/images/teste.png"> <br />
-					<a class="btn" data-toggle="modal" data-target="#requestModal">Solicitar entrada</a>
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
 				</div>
+				
 				<div class="teamDiv">
 					<p class="teamName"><a href="#">Equipe</a></p>
 					<img src="../resources/images/teste.png"> <br />
-					<a class="btn" data-toggle="modal" data-target="#requestModal">Solicitar entrada</a>
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
 				</div>
-				<div></div>
+				
+				<div class="teamDiv">
+					<p class="teamName"><a href="#">Equipe</a></p>
+					<img src="../resources/images/teste.png"> <br />
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				</div>
+				
+				<div class="teamDiv">
+					<p class="teamName"><a href="#">Equipe</a></p>
+					<img src="../resources/images/teste.png"> <br />
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				</div>
+				
+				<div class="teamDiv">
+					<p class="teamName"><a href="#">Equipe</a></p>
+					<img src="../resources/images/teste.png"> <br />
+					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				</div>
 			</div>
 		</div>
-	</header>
-	<!-- /Header -->
-
-	<footer id="footer" class="top-space">
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-								<a href="#">Página inicial</a> | 
-								<a href="about.html">Equipes cadastradas</a>
-							</p>
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-	</footer>	
-		
+	</main>
+	<!-- /Main -->
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="../resources/js/headroom.min.js"></script>
