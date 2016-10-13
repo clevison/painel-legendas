@@ -11,11 +11,14 @@ body {
 }
 
 .modal-dialog {
-	margin-top: 200px;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-header {
-	background-color: #FF9B22;
+	background-color: #5cc590;
 }
 
 .modal-body {
@@ -24,15 +27,12 @@ body {
 
 .modal-content {
 	font-family: 'Open Sans', sans-serif;
+	min-width: 300px;
 }
 
 .myInput {
 	padding: 5px;
 	width: 100%;
-}
-
-.gallery {
-	margin-top: 100px;
 }
 
 .portfolio {
@@ -41,37 +41,46 @@ body {
 	justify-content: center;
 }
 
-.teamDiv {
-	margin: 20px 50px;
-	width: 150px;
-	height: 200px;
-	border: 2px solid black;
-	border-radius: 10px;
+.team {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  width: 148px;
+  height: 198px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 25px;
+}
+.team .title {
+  font-weight: 500;
+  cursor: default;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team .title h1 {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+  text-transform: uppercase;
+}
+.team .image {
+  width: 148px;
+  height: 148px;
+}
+.team .button {
+  background: #666;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 11px;
+  height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.teamName {
-	font-size: 20px;
-    height: 30px;
-}
-
-.teamName a {
-	text-decoration: none;
-	color: white;
-}
-
-.teamDiv img {;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-    margin-bottom: 15px;
-    margin-top: 10px;
-}
-
-.teamButton a {
-	font-size: 14px;
-	text-decoration: none;
-	color: white;
-	cursor: pointer;
-	font-weight: bold;
-}
 

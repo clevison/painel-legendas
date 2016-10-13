@@ -22,7 +22,7 @@
 <body class="home" id="container">
 
 	<!-- Modal to login -->
-	<div class="modal fade" id="loginModal" role="dialog">
+	<div class="modal fade" id="loginModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -31,8 +31,8 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<p><input type="text" class="myInput" placeholder="Nome de usuário"></p>
-						<p><input type="password" class="myInput" placeholder="Senha"></p>
+						<p><input type="text" required class="myInput" placeholder="Nome de usuário"></p>
+						<p><input type="password" required class="myInput" placeholder="Senha"></p>
 						<br />
 						<p><input type="submit" class="btn btn-success" value="Entrar"></p>
 					</form>
@@ -40,10 +40,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- /.navbar -->
+	<!-- /Modal to login -->
 	
 	<!-- Modal to register -->
-	<div class="modal fade" id="registerModal" role="dialog">
+	<div class="modal fade" id="registerModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -52,18 +52,18 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<p><input type="text" class="myInput" placeholder="Nome de usuário"></p>
-						<p><input type="email" class="myInput" placeholder="E-mail"></p>
-						<p><input type="password" class="myInput" placeholder="Senha"></p>
-						<p><input type="password" class="myInput" placeholder="Confirme sua senha"></p>
+						<p><input type="text" required class="myInput" placeholder="Nome de usuário"></p>
+						<p><input type="email" required class="myInput" placeholder="E-mail"></p>
+						<p><input type="password" required class="myInput" id="primeiraSenha" placeholder="Senha"></p>
+						<p><input type="password" required class="myInput" placeholder="Confirme sua senha" oninput="validarSenha(this)"></p>
 						<br />
-						<p><input type="submit" class="btn btn-success" value="Cadastrar-se"></p>
+						<p><input type="submit" class="btn btn-success" id="submitButton" value="Cadastrar-se"></p>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- /.navbar -->
+	<!-- /Modal to register -->
 
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top" >

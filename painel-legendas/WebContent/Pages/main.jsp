@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Painel de legendas</title>
+	<title>Equipes cadastradas</title>
 
 	<link rel="shortcut icon" href="../resources/images/gt_favicon.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
@@ -21,8 +21,29 @@
 
 <body class="home" id="container">
 
+	<!-- Modal to create team -->
+	<div class="modal fade" id="createTeamModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Criar equipe</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<p><input type="text" class="myInput" placeholder="Nome da equipe"></p>
+						<p><textarea class="myInput" placeholder="Mensagem" rows="5"></textarea></p>
+						<br />
+						<p><input type="submit" class="btn btn-success" value="Enviar"></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Modal to create team -->
+
 	<!-- Modal to edit profile -->
-	<div class="modal fade" id="editProfileModal" role="dialog">
+	<div class="modal fade" id="editProfileModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -44,7 +65,7 @@
 	<!-- /Modal to edit profile -->
 	
 	<!-- Modal to request entry -->
-	<div class="modal fade" id="requestModal" role="dialog">
+	<div class="modal fade" id="requestModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -73,10 +94,11 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
+					<li><a class="btn" data-toggle="modal" data-target="#createTeamModal">CRIAR EQUIPE</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Olá, {nickname}<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.html" data-toggle="modal" data-target="#editProfileModal">Editar perfil</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#editProfileModal">Editar perfil</a></li>
 							<li><a href="sidebar-left.html">Sair</a></li>
 						</ul>
 					</li>
@@ -90,52 +112,84 @@
 	<main id="main">
 		<div class="container">
 			<div class="portfolio">
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a data-toggle="modal" data-target="#requestModal" class="button">Solicitar entrada</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a href="#" class="button">Acessar</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a data-toggle="modal" data-target="#requestModal" class="button">Solicitar entrada</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a href="#" class="button">Acessar</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a data-toggle="modal" data-target="#requestModal" class="button">Solicitar entrada</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a href="#" class="button">Acessar</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a data-toggle="modal" data-target="#requestModal" class="button">Solicitar entrada</a>
 				</div>
 				
-				<div class="teamDiv">
-					<p class="teamName"><a href="#">Equipe</a></p>
-					<img src="../resources/images/teste.png"> <br />
-					<p class="teamButton"><a data-toggle="modal" data-target="#requestModal">Solicitar entrada</a></p>					
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a href="#" class="button">Acessar</a>
+				</div>
+				
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a data-toggle="modal" data-target="#requestModal" class="button">Solicitar entrada</a>
+				</div>
+				
+				<div class="team">
+					<div class="title">
+						<h1>Equipe</h1>
+					</div>
+					<img class="image" src="https://www.outsystems.com/PortalTheme/img/UserImage.png?24752">
+					<a href="#" class="button">Acessar</a>
 				</div>
 			</div>
 		</div>
