@@ -19,10 +19,10 @@
 	<link rel="stylesheet" href="../resources/css/mycss.css">
 </head>
 
-<body class="home">
+<body class="home" id="container">
 
 	<!-- Modal to login -->
-	<div class="modal fade" id="loginModal" role="dialog">
+	<div class="modal fade" id="loginModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -31,8 +31,8 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<p><input type="text" class="myInput" placeholder="Nome de usuário"></p>
-						<p><input type="password" class="myInput" placeholder="Senha"></p>
+						<p><input type="text" required class="myInput" placeholder="Nome de usuário"></p>
+						<p><input type="password" required class="myInput" placeholder="Senha"></p>
 						<br />
 						<p><input type="submit" class="btn btn-success" value="Entrar"></p>
 					</form>
@@ -40,10 +40,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- /.navbar -->
+	<!-- /Modal to login -->
 	
 	<!-- Modal to register -->
-	<div class="modal fade" id="registerModal" role="dialog">
+	<div class="modal fade" id="registerModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -52,21 +52,21 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<p><input type="text" class="myInput" placeholder="Nome de usuário"></p>
-						<p><input type="email" class="myInput" placeholder="E-mail"></p>
-						<p><input type="password" class="myInput" placeholder="Senha"></p>
-						<p><input type="password" class="myInput" placeholder="Confirme sua senha"></p>
+						<p><input type="text" required class="myInput" placeholder="Nome de usuário"></p>
+						<p><input type="email" required class="myInput" placeholder="E-mail"></p>
+						<p><input type="password" required class="myInput" id="primeiraSenha" placeholder="Senha"></p>
+						<p><input type="password" required class="myInput" placeholder="Confirme sua senha" oninput="validarSenha(this)"></p>
 						<br />
-						<p><input type="submit" class="btn btn-success" value="Cadastrar-se"></p>
+						<p><input type="submit" class="btn btn-success" id="submitButton" value="Cadastrar-se"></p>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- /.navbar -->
+	<!-- /Modal to register -->
 
 	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+	<div class="navbar navbar-inverse navbar-fixed-top" >
 		<div class="container">
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
@@ -78,7 +78,7 @@
 					<li class="active"><a href="#">Página inicial</a></li>
 					<li><a href="about.html">Equipes cadastradas</a></li>
 					<li><a href="contact.html">Sobre o site</a></li>
-					<li><a class="btn" id="loginButton" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
+					<li><a class="btn" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -93,35 +93,15 @@
 				<p class="tagline">Cadastre-se e tenha acesso às maiores equipes de tradução do país. <br />
 				Junte-se a elas e venha aprender inglês, português e vários outros idiomas, além de fazer novas amizades e, claro, ajudar as pessoas.</p>
 				<p>
-					<a class="btn btn-action btn-lg" role="button" id="loginButton" data-toggle="modal" data-target="#loginModal">ENTRAR</a>
+					<a class="btn btn-action btn-lg" role="button" data-toggle="modal" data-target="#loginModal">ENTRAR</a>
 					&nbsp;&nbsp;&nbsp;
-					<a class="btn btn-action btn-lg" role="button" id="registerButton" data-toggle="modal" data-target="#registerModal">CRIAR CONTA</a>
+					<a class="btn btn-action btn-lg" role="button" data-toggle="modal" data-target="#registerModal">CRIAR CONTA</a>
 				</p>
 			</div>
 		</div>
 	</header>
 	<!-- /Header -->
 
-	<footer id="footer" class="top-space">
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-								<a href="#">Página inicial</a> | 
-								<a href="about.html">Equipes cadastradas</a>
-							</p>
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-	</footer>	
-		
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="../resources/js/headroom.min.js"></script>
