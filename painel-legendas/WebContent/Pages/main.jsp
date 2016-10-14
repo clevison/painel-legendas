@@ -10,13 +10,13 @@
 	
 	<title>Equipes cadastradas</title>
 
-	<link rel="shortcut icon" href="../resources/images/gt_favicon.png">
+	<link rel="shortcut icon" href="resources/images/gt_favicon.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../resources/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../resources/css/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="../resources/css/main.css">
-	<link rel="stylesheet" href="../resources/css/mycss.css">
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/css/font-awesome.min.css">
+	<link rel="stylesheet" href="resources/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="resources/css/main.css">
+	<link rel="stylesheet" href="resources/css/mycss.css">
 </head>
 
 <body class="home" id="container">
@@ -90,7 +90,7 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img src="../resources/images/logo.png" alt="Progressus HTML5 template"></a>
+				<a class="navbar-brand" href="index.html"><img src="resources/images/logo.png" alt="Progressus HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
@@ -99,7 +99,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Olá, {nickname}<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#" data-toggle="modal" data-target="#editProfileModal">Editar perfil</a></li>
-							<li><a href="sidebar-left.html">Sair</a></li>
+							<li><a href="logout.jsp">Sair</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -198,8 +198,8 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="../resources/js/headroom.min.js"></script>
-	<script src="../resources/js/jQuery.headroom.min.js"></script>
-	<script src="../resources/js/template.js"></script>
+	<script src="resources/js/headroom.min.js"></script>
+	<script src="resources/js/jQuery.headroom.min.js"></script>
+	<script src="resources/js/template.js"></script>
 </body>
 </html>
